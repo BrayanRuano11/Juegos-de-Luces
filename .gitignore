@@ -1,0 +1,148 @@
+int leds [14]={0,1,2,3,4,5,6,7,8,9,10,11,12,13};
+
+void setup() {
+  // put your setup code here, to run once:
+
+ //declarar pin como salida
+pinMode(0,OUTPUT);
+pinMode(1,OUTPUT);
+pinMode(2,OUTPUT);
+pinMode(3,OUTPUT);
+pinMode(4,OUTPUT);
+pinMode(5,OUTPUT);
+pinMode(6,OUTPUT);
+pinMode(7,OUTPUT);
+pinMode(8,OUTPUT);
+pinMode(9,OUTPUT);
+pinMode(10,OUTPUT);
+pinMode(11,OUTPUT);
+pinMode(12,OUTPUT);
+pinMode(13,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+luces();
+delay(500);
+luces2();
+delay(500);
+luces3 ();
+delay(500);
+}
+
+int contador=7;
+void luces (){
+for (;contador<=13;contador ++){
+  digitalWrite(leds[contador],HIGH);
+  delay(100);
+}
+for (;contador>=7;contador --){
+   digitalWrite(leds[contador],LOW);
+  delay(100);
+}
+for (;contador>=0;contador --){
+  digitalWrite(leds[contador],HIGH);
+  delay(100);
+}
+for (;contador<=7;contador ++){
+   digitalWrite(leds[contador],LOW);
+  delay(100);
+}
+contador=7;
+}
+
+int contador2=13;
+int contador3=0;
+void luces2 (){
+for (;contador2>=7;contador2 --){
+    digitalWrite(leds[contador2],HIGH);
+  delay(100);
+  digitalWrite(leds[contador2],LOW);
+  delay(100);
+ }
+ for (;contador3<7;contador3 ++){
+  
+    digitalWrite(leds[contador3],HIGH);
+  delay(100);
+  digitalWrite(leds[contador3],LOW);
+  delay(100);
+  }
+for (;contador2<=13;contador2 ++){
+    digitalWrite(leds[contador2],LOW);
+  delay(100);
+  digitalWrite(leds[contador2],HIGH);
+  delay(100);
+ }  
+ for (;contador3>0;contador3 --){
+  
+    digitalWrite(leds[contador3],LOW);
+  delay(100);
+  digitalWrite(leds[contador3],HIGH);
+  delay(100);
+  }
+contador2=13;
+contador3=0;
+}
+
+int contador4=0;
+
+void luces3 (){
+  for (;contador4<2;contador4 ++){
+  digitalWrite(leds[contador4],HIGH);
+  delay(100);
+}
+  for (;contador4>=0;contador4 --){
+   digitalWrite(leds[contador4],LOW);
+  delay(100);
+  }
+  for (;contador4<4;contador4 ++){
+  digitalWrite(leds[contador4],HIGH);
+  delay(100);
+  }
+  for (;contador4>=0;contador4 --){
+   digitalWrite(leds[contador4],LOW);
+  delay(100);
+  }
+   for (;contador4<6;contador4 ++){
+  digitalWrite(leds[contador4],HIGH);
+  delay(100);
+   }
+   for (;contador4>=0;contador4 --){
+   digitalWrite(leds[contador4],LOW);
+  delay(100);
+  }
+  for (;contador4<8;contador4 ++){
+  digitalWrite(leds[contador4],HIGH);
+  delay(100);
+   }
+  for (;contador4>=0;contador4 --){
+   digitalWrite(leds[contador4],LOW);
+  delay(100);
+  }
+  for (;contador4<10;contador4 ++){
+  digitalWrite(leds[contador4],HIGH);
+  delay(100);
+  }
+  for (;contador4>=0;contador4 --){
+   digitalWrite(leds[contador4],LOW);
+  delay(100);
+  }
+  for (;contador4<12;contador4 ++){
+  digitalWrite(leds[contador4],HIGH);
+  delay(100);
+  }
+  for (;contador4>=0;contador4 --){
+   digitalWrite(leds[contador4],LOW);
+  delay(100);
+  }
+  for (;contador4<14;contador4 ++){
+  digitalWrite(leds[contador4],HIGH);
+  delay(100);
+  }
+  for (;contador4>=0;contador4 --){
+   digitalWrite(leds[contador4],LOW);
+  delay(100);
+  }
+ contador4=0;
+}
+  
